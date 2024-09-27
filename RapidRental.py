@@ -6,6 +6,7 @@ import tkinter.ttk as abc
 from tkinter import ttk
 import mysql.connector as ms
 from tkinter import messagebox
+from GlobalVariables import *
 #-------------------------------FUNCTIONS----------------------------------------#
 def CMWin():     # SECOND WINDOW
     rrc.withdraw() 
@@ -23,7 +24,7 @@ def CMWin():     # SECOND WINDOW
                     date=E6.get()
                     print(f'{E7.get()} and {type(E7.get())}')
                     totalprice=int(float(E7.get()))
-                    mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+                    mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                     mycur = mycon.cursor()
                     SQ = '''INSERT into custrecord(BILLNO,CUSTOMER,DOHR,PHONENO,Item,hours,TOTALPRICE)values(%s,%s,%s,%s,%s,%s,%s)'''
                     tres = (billno,customername,date,phoneno,itemname,hours,totalprice)
@@ -72,7 +73,7 @@ def CMWin():     # SECOND WINDOW
                 E5.insert(0,hour)
                 E6=Entry(LF, width=30,font="25")
                 E6.grid(row=6,column=2,padx=20,pady=20)
-                mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+                mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                 mycur = mycon.cursor()
                 mycur.execute('select curdate()')
                 myres = mycur.fetchall()
@@ -105,7 +106,7 @@ def CMWin():     # SECOND WINDOW
             frm2.grid(row=2,column=1,pady=20,padx=20)
             Label(frm2, text="SELECT BIKE :", background="Purple", fg="White",font="25").grid(row=1,column=1,padx=20,pady=20)
             L1=[]
-            conn=ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+            conn=ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
             mycur=conn.cursor()
             Sq ='''select Item from items where TYPE='BIKE' and avail='YES' '''  # THIS IS WHERE ONLY AVAILABLE ITEMS ARE SELECT INTO THE LIST SHOWN IN LAYOUT 
             mycur.execute(Sq)
@@ -148,7 +149,7 @@ def CMWin():     # SECOND WINDOW
                     hours=int(E5.get())
                     date=E6.get()
                     totalprice=int(E7.get())
-                    mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+                    mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                     mycur = mycon.cursor()
                     SQ = '''INSERT into custrecord(BILLNO, CUSTOMER,DOHR,PHONENO,Item,Hours,TOTALPRICE)
         values(%s,%s,%s,%s,%s,%s,%s)'''
@@ -198,7 +199,7 @@ def CMWin():     # SECOND WINDOW
                 E5.insert(0,hour)
                 E6=Entry(LF, width=30,font="25")
                 E6.grid(row=6,column=2,padx=20,pady=20)
-                mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+                mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                 mycur = mycon.cursor()
                 mycur.execute('select curdate()')
                 myres = mycur.fetchall()
@@ -231,7 +232,7 @@ def CMWin():     # SECOND WINDOW
             l1=Label(frm2, text="SELECT CYCLE :", background="Purple", fg="White",font="25")
             l1.grid(row=1,column=1,padx=20,pady=20)
             L1=[]
-            conn=ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+            conn=ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
             mycur=conn.cursor()
             Sq ='''select Item from items where TYPE='CYCLE' and avail='YES' ''' # THIS IS WHERE ONLY AVAILABLE ITEMS ARE SELECT INTO THE LIST SHOWN IN LAYOUT 
             mycur.execute(Sq)
@@ -273,7 +274,7 @@ def CMWin():     # SECOND WINDOW
                     hours=int(E5.get())
                     date=E6.get()
                     totalprice=int(E7.get())
-                    mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+                    mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                     mycur = mycon.cursor()
                     SQ ='''INSERT into custrecord(BILLNO, CUSTOMER,DOHR,PHONENO,Item,Hours,TOTALPRICE)
         values(%s,%s,%s,%s,%s,%s,%s)'''
@@ -323,7 +324,7 @@ def CMWin():     # SECOND WINDOW
                 E5.insert(0,hour)
                 E6=Entry(LF, width=30,font="25")
                 E6.grid(row=6,column=2,padx=20,pady=20)
-                mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+                mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                 mycur = mycon.cursor()
                 mycur.execute('select curdate()')
                 myres = mycur.fetchall()
@@ -355,7 +356,7 @@ def CMWin():     # SECOND WINDOW
             frm2.grid(row=2,column=1,pady=20,padx=20)
             Label(frm2, text="SELECT CAR :", background="Purple", fg="White",font="25").grid(row=1,column=1,padx=20,pady=20)
             L1=[]
-            conn=ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+            conn=ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
             mycur=conn.cursor()
             Sq ='''select Item from items where TYPE='CAR' and avail='YES' ''' # THIS IS WHERE ONLY AVAILABLE ITEMS ARE SELECT INTO THE LIST SHOWN IN LAYOUT 
             mycur.execute(Sq)
@@ -411,7 +412,7 @@ def CMWin():     # SECOND WINDOW
             astatus=ie4.get()
             hours=ie5.get()
             price=ie6.get()
-            mycon=ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+            mycon=ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
             cur = mycon.cursor()
             Sq='''insert into items(modelno,Item,TYPE, avail,Hours,price)
     values(%s,%s,%s,%s,%s,%s)'''
