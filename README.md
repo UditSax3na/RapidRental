@@ -17,4 +17,4 @@ Rapid Rental is a user-friendly Tkinter application designed to efficiently mana
 
 ### Steps to run this application 
 - #### Step 1
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the Database&TableCreation file to create database "rapidrental" and first table "item"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the Database&TableCreation file to create database "rapidrental" and first table "item"
