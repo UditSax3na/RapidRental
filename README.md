@@ -15,7 +15,7 @@ Rapid Rental is a user-friendly Tkinter application designed to efficiently mana
 - **Rental Management**: Tracking rental periods, rental fees, and vehicle returns.
 - **Data Search** : Quickly searching for specific vehicles or customer records based on various criteria.
 
-### Steps to run this application 
+## Steps to run this application 
 - #### Step 1
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the mysql server
 
