@@ -1,6 +1,6 @@
 # program to create second table :- items
 import mysql.connector as ms
-mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
+mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
 cur=mycon.cursor()
 cur.execute('''create table items
 (   modelno int not null,

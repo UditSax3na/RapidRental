@@ -20,10 +20,13 @@ Rapid Rental is a user-friendly Tkinter application designed to efficiently mana
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the mysql server
 
 - #### Step 2
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the Database&TableCreation file to create database "rapidrental" and first table "item"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit the GlobalVariable file with the necessary data
 
 - #### Step 3
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the ItemTables file to create second table in the same database
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the Database&TableCreation file to create database "rapidrental" and first table "item"
 
 - #### Step 4
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the ItemTables file to create second table in the same database
+
+- #### Step 5
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the RapidRental file to use the application 

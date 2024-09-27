@@ -1,6 +1,6 @@
 # program to create database and table :- rapidrental and custrecord
 import mysql.connector as ms
-mycon = ms.connect(host='localhost',user='root',passwd='')
+mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD)
 cur=mycon.cursor()
 cur.execute('create database rapidrental')
 cur.execute('use rapidrental')
