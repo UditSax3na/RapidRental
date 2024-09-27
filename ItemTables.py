@@ -1,4 +1,4 @@
-# program to create second table
+# program to create second table :- items
 import mysql.connector as ms
 mycon = ms.connect(host='localhost',user='root',passwd='',database='rapidrental')
 cur=mycon.cursor()
