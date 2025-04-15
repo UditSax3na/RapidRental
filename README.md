@@ -3,9 +3,13 @@
 - Uses MySQL for data storage
 - Allows easy input and tracking of vehicle details (ID, price, model, availability)
 
+---
+
 ## Tech Used
  - Python
  - MySQL 
+
+---
 
 ## Description
 Rapid Rental is a user-friendly Tkinter application designed to efficiently manage vehicle rental data. It provides a streamlined interface for:
@@ -14,6 +18,8 @@ Rapid Rental is a user-friendly Tkinter application designed to efficiently mana
 - **Customer Records**: Recording customer information such as name, contact details, and rental history.
 - **Rental Management**: Tracking rental periods, rental fees, and vehicle returns.
 - **Data Search** : Quickly searching for specific vehicles or customer records based on various criteria.
+
+---
 
 ## Steps to run this application 
 - #### Step 1
@@ -30,3 +36,8 @@ Rapid Rental is a user-friendly Tkinter application designed to efficiently mana
 
 - #### Step 5
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the RapidRental file to use the application 
+
+---
+
+### Author
+made by :- [UditSax3na](https://github.com/UditSax3na)
