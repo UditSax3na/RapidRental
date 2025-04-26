@@ -26,9 +26,9 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
   In the **Update Record Screen**, search for vehicle details based on **Model Number** to update existing records.
 
 ---
-# How to Set Up and Run This Application
+## How to Set Up and Run This Application
 
-## 1. Set up Virtual Environment
+### 1. Set up Virtual Environment
 
 ```bash
 python -m venv venv
@@ -47,7 +47,7 @@ Activate the virtual environment:
 
 ---
 
-## 2. Install Requirements
+### 2. Install Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -57,21 +57,21 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Set Up Database Credentials
+### 3. Set Up Database Credentials
 
 - Open the `GlobalVariable.py` file.
 - Update the file with your MySQL **username**, **password**, and **host** (e.g., `localhost` if using XAMPP).
 
 ---
 
-## 4. Start MySQL Server
+### 4. Start MySQL Server
 
 - Open **XAMPP Control Panel** (or your MySQL server application).
 - Start the **MySQL** service.
 
 ---
 
-## 5. Create Database and Tables
+### 5. Create Database and Tables
 
 Run the following scripts to set up your database:
 
@@ -85,7 +85,7 @@ python ItemTables.py
 
 ---
 
-## 6. Launch the Application
+### 6. Launch the Application
 
 Finally, run the application:
 
