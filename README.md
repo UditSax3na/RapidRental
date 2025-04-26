@@ -14,35 +14,86 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
 ## Features
 
 - **Vehicle Management**:  
-  Store and manage vehicle details — ID, make, model, year, price, and availability.
+  Store and manage vehicle details — **Model No**, **Item Name**, **Type** (Bike/Car/Cycle), **Availability**, **Hours Available**, and **Price**.
 
 - **Customer Records**:  
-  Record customer data like name, contact information, and rental history.
+  Record customer information like **Name**, **Phone Number**, rental **Item Name**, **Hours**, **Rental Date (YYYY-MM-DD)**, and **Total Price**.
 
-- **Rental Management**:  
-  Track rental periods, rental fees, active rentals, and vehicle returns.
+- **Rental & Billing Management**:  
+  Track rental periods, generate **Billing Information** with **Bill No**, and calculate the **Total Price** automatically based on hours and vehicle pricing.
 
-- **Search Functionality**:  
-  Quickly search for vehicles or customers based on multiple criteria.
+- **Update Record with Search**:  
+  In the **Update Record Screen**, search for vehicle details based on **Model Number** to update existing records.
+
+---
+# How to Set Up and Run This Application
+
+## 1. Set up Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+- On **Windows**:
+  ```bash
+  venv\Scripts\activate
+  ```
+- On **macOS/Linux**:
+  ```bash
+  source venv/bin/activate
+  ```
 
 ---
 
-## How to Run This Application
+## 2. Install Requirements
 
-1. **Start the MySQL Server**  
-   Ensure that your MySQL server is up and running.
+```bash
+pip install -r requirements.txt
+```
 
-2. **Configure Database Connection**  
-   Edit the `GlobalVariable.py` file with your database username, password, and host details.
+> (You mainly need `mysql-connector-python`.)
 
-3. **Create Database and Initial Table**  
-   Run the `Database&TableCreation.py` script to create the database **`rapidrental`** and the first table **`item`**.
+---
 
-4. **Create Additional Tables**  
-   Run the `ItemTables.py` script to add the second table to the database.
+## 3. Set Up Database Credentials
 
-5. **Launch the Application**  
-   Run the `RapidRental.py` file to start using the application.
+- Open the `GlobalVariable.py` file.
+- Update the file with your MySQL **username**, **password**, and **host** (e.g., `localhost` if using XAMPP).
+
+---
+
+## 4. Start MySQL Server
+
+- Open **XAMPP Control Panel** (or your MySQL server application).
+- Start the **MySQL** service.
+
+---
+
+## 5. Create Database and Tables
+
+Run the following scripts to set up your database:
+
+```bash
+python Database&TableCreation.py
+python ItemTables.py
+```
+
+- `Database&TableCreation.py`: Creates the database **rapidrental** and the first table `item`.
+- `ItemTables.py`: Creates additional tables required for the application.
+
+---
+
+## 6. Launch the Application
+
+Finally, run the application:
+
+```bash
+python RapidRental.py
+```
+
+Your Rapid Rental App is now ready! 🚗✨
 
 ---
 
@@ -57,6 +108,14 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
 ### Add Record Screen
 ![Add Record](images/addrecordscreen.png)
 
+> In **Add Record**, you can store:
+> - Model No
+> - Item Name
+> - Type (Bike/Car/Cycle)
+> - Available (Yes/No)
+> - Hours
+> - Price per Hour
+
 ### All Records Screen
 ![All Record](images/allrecords.png)
 
@@ -69,8 +128,19 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
 ### Bike/Car/Cycle Hiring Screen
 ![Bike/Car/Cycle Hiring Screen](images/bikehiringscreen.png)
 
+> In **Hire Screen**, you select a vehicle and define hiring hours.
+
 ### Billing Screen
 ![Billing Screen](images/billingscreen.png)
+
+> In **Billing Screen**, you manage:
+> - Bill No
+> - Customer Name
+> - Phone No
+> - Item Name
+> - Hours
+> - Date (YYYY-MM-DD)
+> - Total Price (calculated)
 
 ### All Customer Record
 ![All Customer Record](images/allcustrecord.png)
@@ -78,7 +148,7 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
 ### Update Record Screen
 ![Update Record Screen](images/updatescreen.png)
 
-
+> Update vehicle or customer details as needed.
 
 ---
 
