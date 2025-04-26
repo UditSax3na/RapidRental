@@ -1,9 +1,10 @@
 # program to create second table :- items
 import mysql.connector as ms
+from GlobalVariables import *
 mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
 cur=mycon.cursor()
 cur.execute('''create table items
-(   modelno int not null,
+(   modelno int not null,   
     Item varchar(40),
     TYPE varchar(5) ,
     avail char(3) default 'NO',

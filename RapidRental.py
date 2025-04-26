@@ -22,7 +22,6 @@ def CMWin():     # SECOND WINDOW
                     itemname=E4.get()
                     hours=int(E5.get())
                     date=E6.get()
-                    print(f'{E7.get()} and {type(E7.get())}')
                     totalprice=int(float(E7.get()))
                     mycon = ms.connect(host=HOST,user=USERNAME,passwd=PASSWORD,database=DATABASE)
                     mycur = mycon.cursor()

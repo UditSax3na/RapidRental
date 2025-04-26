@@ -1,43 +1,58 @@
-# Rapid Rental
-- Tkinter-based app for vehicle rental management
-- Uses MySQL for data storage
-- Allows easy input and tracking of vehicle details (ID, price, model, availability)
+# 🚗 Rapid Rental
+
+A Tkinter-based application for efficient vehicle rental management, using **MySQL** for data storage. Rapid Rental simplifies input, tracking, and management of vehicles, customers, and rentals through a user-friendly interface.
 
 ---
 
-## Tech Used
- - Python
- - MySQL 
+## 🛠️ Tech Stack
+
+- **Python**
+- **MySQL**
 
 ---
 
-## Description
-Rapid Rental is a user-friendly Tkinter application designed to efficiently manage vehicle rental data. It provides a streamlined interface for:
+## 📋 Features
 
-- **Vehicle Storage**: Storing essential vehicle details like ID, make, model, year, and availability status.
-- **Customer Records**: Recording customer information such as name, contact details, and rental history.
-- **Rental Management**: Tracking rental periods, rental fees, and vehicle returns.
-- **Data Search** : Quickly searching for specific vehicles or customer records based on various criteria.
+- **Vehicle Management**:  
+  Store and manage vehicle details — ID, make, model, year, price, and availability.
 
----
+- **Customer Records**:  
+  Record customer data like name, contact information, and rental history.
 
-## Steps to run this application 
-- #### Step 1
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the mysql server
+- **Rental Management**:  
+  Track rental periods, rental fees, active rentals, and vehicle returns.
 
-- #### Step 2
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit the GlobalVariable file with the necessary data
-
-- #### Step 3
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the Database&TableCreation file to create database "rapidrental" and first table "item"
-
-- #### Step 4
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the ItemTables file to create second table in the same database
-
-- #### Step 5
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the RapidRental file to use the application 
+- **Search Functionality**:  
+  Quickly search for vehicles or customers based on multiple criteria.
 
 ---
 
-### Author
-made by :- [UditSax3na](https://github.com/UditSax3na)
+## 🚀 How to Run This Application
+
+1. **Start the MySQL Server**  
+   Ensure that your MySQL server is up and running.
+
+2. **Configure Database Connection**  
+   Edit the `GlobalVariable.py` file with your database username, password, and host details.
+
+3. **Create Database and Initial Table**  
+   Run the `Database&TableCreation.py` script to create the database **`rapidrental`** and the first table **`item`**.
+
+4. **Create Additional Tables**  
+   Run the `ItemTables.py` script to add the second table to the database.
+
+5. **Launch the Application**  
+   Run the `RapidRental.py` file to start using the application.
+
+---
+
+## 📸 Screenshots
+
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by [**UditSax3na**](https://github.com/UditSax3na)
+
+---
