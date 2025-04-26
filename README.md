@@ -1,17 +1,17 @@
-# 🚗 Rapid Rental
+# Rapid Rental
 
 A Tkinter-based application for efficient vehicle rental management, using **MySQL** for data storage. Rapid Rental simplifies input, tracking, and management of vehicles, customers, and rentals through a user-friendly interface.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**
 - **MySQL**
 
 ---
 
-## 📋 Features
+## Features
 
 - **Vehicle Management**:  
   Store and manage vehicle details — ID, make, model, year, price, and availability.
@@ -27,7 +27,7 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
 
 ---
 
-## 🚀 How to Run This Application
+## How to Run This Application
 
 1. **Start the MySQL Server**  
    Ensure that your MySQL server is up and running.
@@ -46,13 +46,44 @@ A Tkinter-based application for efficient vehicle rental management, using **MyS
 
 ---
 
-## 📸 Screenshots
+## Screens
+
+### Welcome Screen
+![Welcome Screen](images/welcomescreen.png)
+
+### Main Screen
+![Main Screen](images/mainscreen.png)
+
+### Add Record Screen
+![Add Record](images/addrecordscreen.png)
+
+### All Records Screen
+![All Record](images/allrecords.png)
+
+### All Available Vehicles Records
+![All Available Vehicles Records](images/availvehicles.png)
+
+### Hire Screen
+![Hire Screen](images/hirescreen.png)
+
+### Bike/Car/Cycle Hiring Screen
+![Bike/Car/Cycle Hiring Screen](images/bikehiringscreen.png)
+
+### Billing Screen
+![Billing Screen](images/billingscreen.png)
+
+### All Customer Record
+![All Customer Record](images/allcustrecord.png)
+
+### Update Record Screen
+![Update Record Screen](images/updatescreen.png)
+
 
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-Made with ❤️ by [**UditSax3na**](https://github.com/UditSax3na)
+Made by [**UditSax3na**](https://github.com/UditSax3na)
 
 ---
