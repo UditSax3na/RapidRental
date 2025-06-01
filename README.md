@@ -93,7 +93,7 @@ Finally, run the application:
 python RapidRental.py
 ```
 
-Your Rapid Rental App is now ready! 🚗✨
+Your Rapid Rental App is now ready!
 
 ---
 
